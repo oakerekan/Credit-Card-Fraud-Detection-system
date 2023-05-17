@@ -36,16 +36,16 @@ def main():
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
-    V4 = st.number_input("V4 ('Values -6 and 20')", step="int")
-    V8 = st.number_input("V8 ('Values between -73 and 20')", step="int")
-    V10 = st.number_input("V10 ('Values between -25 and 25')", step="int")
-    V13 = st.number_input("V13 ('Values -6 and 8')", step="int")
-    V14 = st.number_input("V14 ('Values -20 and 12')", step="int")
-    V16 = st.number_input("V16 ('Values -15 and 18')", step="int")
-    V21 = st.number_input("V21 ('Values -35 and 30')", step="int")
-    V22 = st.number_input("V22 ('Values -11 and 11')", step="int")
-    V23 = st.number_input("V23 ('Values -45 and 25')", step="int")
-    V27 = st.number_input("V27 ('Values -23 and 31')", step="int")
+    V4 = st.number_input("V4 ('Values -6 and 20')", step=1)
+    V8 = st.number_input("V8 ('Values between -73 and 20')", step=1)
+    V10 = st.number_input("V10 ('Values between -25 and 25')", step=1)
+    V13 = st.number_input("V13 ('Values -6 and 8')", step=1)
+    V14 = st.number_input("V14 ('Values -20 and 12')", step=1)
+    V16 = st.number_input("V16 ('Values -15 and 18')", step=1)
+    V21 = st.number_input("V21 ('Values -35 and 30')", step=1)
+    V22 = st.number_input("V22 ('Values -11 and 11')", step=1)
+    V23 = st.number_input("V23 ('Values -45 and 25')", step=1)
+    V27 = st.number_input("V27 ('Values -23 and 31')", step=1)
     
     
 
