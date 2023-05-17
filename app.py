@@ -36,20 +36,20 @@ def main():
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
-    V4 = st.text_input("V4 ('values -6 and 20')")
-    V8 = st.text_input("V8 ('values between -73 and 20')")
-    V10 = st.text_input("V10 ('values between -25 and 25')")
-    V13 = st.text_input("V13 ('values -6 and 8')")
-    V14 = st.text_input("V14 ('values -20 and 12')")
-    V16 = st.text_input("V16 ('values -15 and 18')")
-    V21 = st.text_input("V21 ('values -35 and 30')")
-    V22 = st.text_input("V22 ('values -11 and 11')")
-    V23 = st.text_input("V23 (values -45 and 25)")
-    V27 = st.text_input("V27 (values -23 and 31)")
+    V4 = float(st.text_input("V4 ('Values -6 and 20')"))
+    V8 = float(st.text_input("V8 ('Values between -73 and 20')"))
+    V10 = float(st.text_input("V10 ('Values between -25 and 25')"))
+    V13 = float(st.text_input("V13 ('Values -6 and 8')"))
+    V14 = float(st.text_input("V14 ('Values -20 and 12')"))
+    V16 = float(st.text_input("V16 ('Values -15 and 18')"))
+    V21 = float(st.text_input("V21 ('Values -35 and 30')"))
+    V22 = float(st.text_input("V22 ('Values -11 and 11')"))
+    V23 = float(st.text_input("V23 ('Values -45 and 25')"))
+    V27 = float(st.text_input("V27 ('Values -23 and 31')"))
 
     # Code for Prediction
     result = ""
-    if st.button("Detect Fraud"):
+    if st.button("Predict Fraud"):
         result = predict_fraud(V4, V8, V10, V13, V14, V16, V21, V22, V23, V27)
         if result >= 0.9:
             result = "This is a fraudulent transaction"
