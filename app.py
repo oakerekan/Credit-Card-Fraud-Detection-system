@@ -29,23 +29,23 @@ def predict_fraud(V4, V8, V10, V13, V14, V16, V21, V22, V23, V27):
 
 
 def main():
-    st.title("Credit Card Fraud Detection System")
+    st.title("Portia's Credit Card Fraud Detection System")
     html_temp = """
     <div style="background-color:green;padding:10px">
-    <h2 style="color:white;text-align:center;"> Credit Card Fraud Detection ML App</h2>
+    <h2 style="color:white;text-align:center;">Portia's Credit Card Fraud Detection ML App</h2>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
-    V4 = st.number_input("V4 (values -6 and 20)")
-    V8 = st.number_input("V8 (values between -73 and 20)")
-    V10 = st.number_input("V10 (values between -25 and 25)")
-    V13 = st.number_input("V13 (values -6 and 8)")
-    V14 = st.number_input("V14 (values -20 and 12)")
-    V16 = st.number_input("V16 (values -15 and 18)")
-    V21 = st.number_input("V21 (values -35 and 30)")
-    V22 = st.number_input("V22 (values -11 and 11)")
-    V23 = st.number_input("V23 (values -45 and 25)")
-    V27 = st.number_input("V27 (values -23 and 31)")
+    V4 = st.text_input("V4 ('values -6 and 20')")
+    V8 = st.text_input("V8 ('values between -73 and 20')")
+    V10 = st.text_input("V10 ('values between -25 and 25')")
+    V13 = st.text_input("V13 ('values -6 and 8')")
+    V14 = st.text_input("V14 ('values -20 and 12')")
+    V16 = st.text_input("V16 ('values -15 and 18')")
+    V21 = st.text_input("V21 ('values -35 and 30')")
+    V22 = st.text_input("V22 ('values -11 and 11')")
+    V23 = st.text_input("V23 (values -45 and 25)")
+    V27 = st.text_input("V27 (values -23 and 31)")
 
     # Code for Prediction
     result = ""
